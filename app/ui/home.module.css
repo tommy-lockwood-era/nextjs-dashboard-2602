@@ -1,0 +1,8 @@
+.shape {
+  height: 0;
+  width: 0;
+  /* Basically, the triangle is best thought of as two reflected 30-60-90 triangles where the bottom-border sets the height, and each of the side borders set the width of each side of the base. If the height is 2rem, then to make the triangle equilateral, the base is 2rem / sqrt(3). */
+  border-bottom: 2rem solid black;
+  border-left: calc(2rem / 1.732) solid transparent;
+  border-right: calc(2rem / 1.732) solid transparent;
+}
